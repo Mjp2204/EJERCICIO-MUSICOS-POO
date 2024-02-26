@@ -1,0 +1,16 @@
+@startuml clases
+Instrumento <|-- Guitarra
+Instrumento <|-- Saxo 
+Instrumento <|-- Triple
+Musico *-- Instrumento
+Banda *-- Musico
+Instrumento : afinar()
+Instrumento : tocar()
+Musico : Instrumento
+Musico : afinar_instrumento()
+Musico : tocar_instrumento()
+Banda : Musicos
+Banda : afinar()
+Banda : tocar()
+Banda : arma_banda
+@enduml
